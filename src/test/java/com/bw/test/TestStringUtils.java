@@ -25,5 +25,26 @@ public class TestStringUtils {
 		assertFalse( StringUtils.isBlank("aaaa"));
 	}
 	
+	@Test
+	public void testRandomn() {
+		String s = StringUtils.getRandomStr(10);
+		System.out.println(" s is :: " + s);
+	}
+	
+	@Test
+	public void testStrRland() {
+		String s = StringUtils.getRandomStr2(25);
+		System.out.println(" s is " + s + "  and ≥§∂» «  " + s.length());
+	}
+	
+	
+	@Test
+	public void testCnStrn() {
+		String s = StringUtils.getRandomCn(25);
+		System.out.println(" s " + s + "  changdu : " + s.length());
+		
+	}
+	
+	
 	
 }
